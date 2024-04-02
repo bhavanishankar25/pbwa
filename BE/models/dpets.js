@@ -23,12 +23,12 @@ const CatSchema = new mongoose.Schema({
   Age: {
     type: Number,
     min: 0,
-    max: 5,
+    max: 9999,
   },
   weight: {
     type: Number,
     min: 0,
-    max: 5,
+    max: 9999,
   },
   gender: {
     type: String,
@@ -47,4 +47,4 @@ const CatSchema = new mongoose.Schema({
 //   },
 });
 
-export default mongoose.model("Pet", diffpetSchema)
+export default mongoose.model("dPet", diffpetSchema)

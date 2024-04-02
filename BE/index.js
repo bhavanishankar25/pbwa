@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
 import catRoute from "./routes/cats.js";
+import DogRoute from "./routes/dogs.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -32,6 +33,7 @@ app.use(cookieParser())
 app.use(express.json())
 app.use("/api/auth", authRoute);
 app.use("/api/cats", catRoute);
+app.use("/api/dogs", DogRoute);
 
 
 app.use((err, req, res, next) => {

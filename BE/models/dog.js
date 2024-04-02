@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const CatSchema = new mongoose.Schema({
+const DogSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -7,7 +7,7 @@ const CatSchema = new mongoose.Schema({
   Age: {
     type: Number,
     min: 0,
-    max: 5,
+    max: 9999,
   },
   breed: {
     type: String,
@@ -21,7 +21,7 @@ const CatSchema = new mongoose.Schema({
   weight: {
     type: Number,
     min: 0,
-    max: 5,
+    max: 9999,
   },
   friendly: {
     type: String,
@@ -33,10 +33,7 @@ const CatSchema = new mongoose.Schema({
 
  }
  
-//   featured: {
-//     type: Boolean,
-//     default: false,
-//   },
+
 });
 
 export default mongoose.model("Dog", DogSchema)

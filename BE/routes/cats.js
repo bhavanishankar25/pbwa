@@ -1,11 +1,10 @@
 import express from "express";
 import {
-//   countByCity,
-//   countByType,
+
   createCat,
   deleteCat,
   getCat,
-//   getHotelRooms,
+
   getCats,
   updateCat,
 } from "../controllers/cat.js";
@@ -27,8 +26,6 @@ router.get("/find/:id", getCat);
 //GET ALL
 
 router.get("/", getCats);
-// router.get("/countByCity", countByCity);
-// router.get("/countByType", countByType);
-// router.get("/room/:id", getHotelRooms);
+
 
 export default router;

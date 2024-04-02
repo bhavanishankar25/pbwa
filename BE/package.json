@@ -21,6 +21,7 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.2.0",
     "nodemon": "^3.1.0",
+    "openssl": "^2.0.0",
     "parser": "^0.1.4",
     "passport": "^0.7.0"
   }
