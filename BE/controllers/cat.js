@@ -51,4 +51,3 @@ export const getCats = async (req, res, next) => {
     next(err);
   }
 };
-
